@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pattern Logic Visualizer</title>
+
+    <!-- Link CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Pattern Logic Visualizer</h1>
+
+    <p>Enter a number and select a pattern type</p>
+
+    <!-- Number input -->
+    <input type="number" id="numberInput" placeholder="Enter a number">
+
+    <br><br>
+
+    <!-- Pattern selection -->
+    <select id="patternType">
+        <option value="">-- Select Pattern --</option>
+        <option value="star">Star Pattern</option>
+       <option value="floyd">Floyd's Triangle</option>
+        <option value="number">Number Pattern</option>
+        <option value="inverted">Inverted Star Pattern</option>
+        
+    </select>
+
+    <br><br>
+
+    <!-- Generate button -->
+    <button onclick="generatePattern()">Generate Pattern</button>
+
+    <br><br>
+
+    <!-- Output area -->
+    <pre id="output"></pre>
+
+    <!-- Link JS file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
